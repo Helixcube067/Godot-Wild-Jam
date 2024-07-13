@@ -2,17 +2,15 @@ extends Node2D
 
 var npc1_scene = preload("res://assets/animal_test.tscn")
 var npc2_scene = preload("res://assets/animal_test_2.tscn")
+
 func _ready():
 	for i in 5:
-
 		var positionsXAnimal1 = randf_range(100, 500)
 		var positionsYAnimal1 = randf_range(100, 500)
 		var positionsXAnimal2 = randf_range(600, 900)
 		var positionsYAnimal2 = randf_range(600, 900)
 		spawn_npc1(Vector2(positionsXAnimal1, positionsYAnimal1))
 		spawn_npc2(Vector2(positionsXAnimal2, positionsYAnimal2))
-
-
 
 
 func spawn_npc1(spawn_position: Vector2):
