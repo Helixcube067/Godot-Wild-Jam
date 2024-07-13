@@ -1,6 +1,7 @@
 extends CharacterBody2D
-class_name animal
+class_name animalBase
 
+enum type {Prey, Predator}
 const SPEED = 100.0
 var destination : Vector2
 var rng = RandomNumberGenerator.new()
