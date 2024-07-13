@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dv8irlopvuc7n"]
+
+[ext_resource type="Texture2D" uid="uid://c6ci0fnso0gkv" path="res://assets/Sans titre.png" id="1_wjau0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1x17u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_wjau0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ix2vg"]
+radius = 23.0
+height = 64.0
+
+[node name="animal_Test" type="RigidBody2D"]
+position = Vector2(0.5, 0.5)
+mass = 0.01
+gravity_scale = 0.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(19.875, -16.25)
+scale = Vector2(0.490602, 0.348921)
+sprite_frames = SubResource("SpriteFrames_1x17u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(14.5, -16.5)
+shape = SubResource("CapsuleShape2D_ix2vg")
