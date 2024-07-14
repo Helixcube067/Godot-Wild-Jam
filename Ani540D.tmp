@@ -5,18 +5,17 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(511, 239)
-
 [node name="Predator" parent="." instance=ExtResource("1_35nk3")]
-position = Vector2(215, 65)
-hungry = true
+position = Vector2(150, 102)
 
 [node name="Predator2" parent="." instance=ExtResource("1_35nk3")]
-position = Vector2(781, 196)
+position = Vector2(569, 77)
 
 [node name="Predator3" parent="." instance=ExtResource("1_35nk3")]
-position = Vector2(378, 372)
+position = Vector2(368, 214)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(511, 239)
 
 [node name="Prey" parent="." instance=ExtResource("2_20rby")]
 position = Vector2(356, 63)

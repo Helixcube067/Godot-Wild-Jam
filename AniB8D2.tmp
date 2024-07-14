@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://6d7ugd7y85ys"]
+
+[ext_resource type="PackedScene" uid="uid://cfyvpgtpy6683" path="res://Predator.tscn" id="1_35nk3"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Predator" parent="." instance=ExtResource("1_35nk3")]
+position = Vector2(356, 138)
+
+[node name="Predator2" parent="." instance=ExtResource("1_35nk3")]
+position = Vector2(772, 181)
+
+[node name="Predator3" parent="." instance=ExtResource("1_35nk3")]
+position = Vector2(404, 426)
