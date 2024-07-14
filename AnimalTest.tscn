@@ -10,7 +10,6 @@ position = Vector2(511, 239)
 
 [node name="Predator" parent="." instance=ExtResource("1_35nk3")]
 position = Vector2(215, 65)
-hungry = true
 
 [node name="Predator2" parent="." instance=ExtResource("1_35nk3")]
 position = Vector2(781, 196)
