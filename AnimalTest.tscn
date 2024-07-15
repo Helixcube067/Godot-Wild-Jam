@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://6d7ugd7y85ys"]
+[gd_scene load_steps=3 format=3 uid="uid://6d7ugd7y85ys"]
 
 [ext_resource type="Script" path="res://Scripts/Animal Scripts/AnimalBase.gd" id="1_dt3ud"]
+[ext_resource type="PackedScene" uid="uid://cc4qmcugem4tf" path="res://day_night_cycle.tscn" id="3_vcpvo"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -31,3 +32,5 @@ offset_top = 149.0
 offset_right = 157.0
 offset_bottom = 189.0
 color = Color(1, 0.509804, 0.47451, 1)
+
+[node name="day_night_cycle" parent="." instance=ExtResource("3_vcpvo")]

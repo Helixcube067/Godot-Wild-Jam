@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://cc4qmcugem4tf"]
+
+[ext_resource type="Script" path="res://day_night_cycle.gd" id="1_fgqeg"]
+[ext_resource type="Script" path="res://Script/day_night_cycle.gd" id="1_yfn83"]
+
+[node name="day_night_cycle" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fgqeg")
+
+[node name="day_night_cycle" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "day/night cycle"
+script = ExtResource("1_yfn83")
+
+[node name="minuteur" type="Timer" parent="."]
+process_callback = 0
+wait_time = 60.0
+one_shot = true
+
+[connection signal="timeout" from="minuteur" to="." method="_on_minuteur_timeout"]
