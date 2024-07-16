@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://cs21e4iriw56l"]
+
+[ext_resource type="PackedScene" uid="uid://b3n51ai14wfpi" path="res://skill_button_otherSkill.tscn" id="1_k6nu7"]
+[ext_resource type="Script" path="res://Script/xp-counter.gd" id="2_i1kik"]
+[ext_resource type="PackedScene" uid="uid://d25msmlkig45a" path="res://skill_button_Attack.tscn" id="3_q7nak"]
+
+[node name="SkillTree" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1149.0
+offset_bottom = 650.0
+
+[node name="skillButton" parent="." instance=ExtResource("1_k6nu7")]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 395.0
+offset_right = 226.0
+offset_bottom = 485.0
+
+[node name="skillButton" parent="skillButton" instance=ExtResource("1_k6nu7")]
+layout_mode = 0
+offset_top = -168.0
+offset_bottom = -78.0
+
+[node name="skillButton2" parent="skillButton/skillButton" instance=ExtResource("1_k6nu7")]
+layout_mode = 0
+offset_top = -161.0
+offset_bottom = -71.0
+
+[node name="xp-counter" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "XP of player"
+script = ExtResource("2_i1kik")
+
+[node name="skill_Button_Attack" parent="." instance=ExtResource("3_q7nak")]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 394.0
+offset_right = 496.0
+offset_bottom = 484.0
