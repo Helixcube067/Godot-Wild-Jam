@@ -41,9 +41,19 @@ offset_bottom = 23.0
 text = "XP of player"
 script = ExtResource("2_i1kik")
 
-[node name="skill_Button_Attack" parent="." instance=ExtResource("3_q7nak")]
+[node name="skill_Button_Attack2" parent="." instance=ExtResource("3_q7nak")]
 layout_mode = 0
 offset_left = 386.0
 offset_top = 394.0
 offset_right = 496.0
 offset_bottom = 484.0
+
+[node name="skill_Button_Attack" parent="skill_Button_Attack2" instance=ExtResource("3_q7nak")]
+layout_mode = 0
+offset_top = -159.0
+offset_bottom = -69.0
+
+[node name="skill_Button_Attack2" parent="skill_Button_Attack2/skill_Button_Attack" instance=ExtResource("3_q7nak")]
+layout_mode = 0
+offset_top = -171.0
+offset_bottom = -81.0
