@@ -1,5 +1,5 @@
 extends Node
-# fichier qui gére les variable globaux 
-var temps : bool = 1 # variable qui gére le systeme jour nuit
-var level_of_animal : int = 0 # variable qui pourais être utiliser pour les niveaux des animaux
+# File that manages global variables
+var temps : bool = 1 # Variable that manages the day-night system
+var level_of_animal : int = 0 # Variable that could be used for animal levels
 var XP : int = 6
